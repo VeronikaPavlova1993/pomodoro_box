@@ -1,0 +1,28 @@
+.form_task {
+    display: flex;
+    flex-direction: column;
+}
+
+.input_task {
+ max-width: 370px;
+ margin: 18px 0px 24px;
+ outline: none;
+ padding: 18px 14px;
+ color: rgb(153, 153, 153);
+ background-color: rgb(244, 244, 244);
+ border: 1px solid rgb(244, 244, 244);
+}
+
+.submit_task {
+ max-width: 173px;
+ padding: 19px 50px;
+ border-radius: 0px;
+ border: none;
+ font-size: 16px;
+ font-weight: 500;
+ transition-property: background-color, color, border-color;
+ cursor: pointer;
+ transition-duration: 300ms;
+ color: rgb(255, 255, 255);
+ background-color: rgb(168, 182, 79);
+}

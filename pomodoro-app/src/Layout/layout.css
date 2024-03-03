@@ -1,0 +1,7 @@
+.main{
+    display: flex;
+    max-width: 1280px;
+    flex-direction: row;
+    padding-top: 170px;
+    gap: 16px;
+}
