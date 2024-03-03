@@ -1,0 +1,15 @@
+.tasks_list {
+ max-width: 528px;
+ color: #333333;
+ font-weight: 700;
+ font-size: 24px;
+}
+.rule {
+ text-align: start;
+ font-weight: 400;
+ font-size: 16px;
+ line-height: 33px;
+}
+.rule::marker{
+    color: #B7280F;
+}

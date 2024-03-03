@@ -1,0 +1,37 @@
+.pomodoro_task {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ margin-right: 10px;
+ border-radius: 50%;
+ width: 23px;
+ height: 23px;
+ font-size: 16px;
+ border: 1px solid rgb(196, 196, 196);
+}
+
+.todo_line {
+ width: 370px;
+ display: flex;
+ flex-direction: row;
+ align-items: center;
+ border-bottom: 1px solid #E4E4E4;
+ padding: 19px 0px;
+}
+.button_task {
+ display: flex;
+ margin-left: auto;
+ padding: 10px;
+ border: none;
+ background: none;
+ transform: translateX(10px);
+}
+.button_disc {
+ border-radius: 50%;
+ width: 6px;
+ height: 6px;
+ background-color: rgb(196, 196, 196);
+}
+.button_disc:not(:last-child) {
+ margin-right: 4px;
+}

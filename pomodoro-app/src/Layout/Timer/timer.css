@@ -1,0 +1,59 @@
+.timer {
+ height: 507px;
+ width: 733px;
+ background-color: rgb(244, 244, 244);
+}
+.task_timer {
+ display: flex;
+ justify-content: space-between;
+ height: 55px;
+ padding: 19px 40px;
+ background-color: #c4c4c4;
+ align-items: center;
+}
+.time {
+ position: relative;
+ font-size: 150px;
+ font-weight: 200;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: #333333;
+}
+.update_time {
+ width: 50px;
+ position: absolute;
+ top: calc(-50% + 15px);
+ right: 0px;
+ border: none;
+ background: none;
+ cursor: pointer;
+}
+.number_task {
+ color: #c4c4c4;
+}
+.name_real-task {
+ color: #333333;
+}
+.controls_timer {
+ display: flex;
+ gap: 25px;
+ justify-content: center;
+ margin-top: 32px;
+}
+
+.controls {
+ display: flex;
+ align-items: center;
+ height: 55px;
+ border-radius: 0;
+ padding: 19px 50px;
+ background-color: #a8b64f;
+ color: #fff;
+ border: 2px solid #a8b64f;
+ font-weight: 500;
+ transition: background-color 0.2s linear, border 0.2s linear;
+}
+.controls:disabled{
+    color: #C4C4C4;
+    background-color: rgb(244, 244, 244);
+    border: 2px solid #C4C4C4;
+}
