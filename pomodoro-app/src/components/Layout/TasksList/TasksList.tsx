@@ -1,6 +1,10 @@
 import { InputForTask } from './InputForTask/InputForTask';
+import { ITodoItem } from './TodoList/TodoItem/TodoItem';
 import { TodoList } from './TodoList/TodoList';
 import './taskList.css';
+interface ITaskList {
+    tasks: ITodoItem[];
+   }
 
 const rules = [
  'Выберите категорию и напишите название текущей задачи',
@@ -10,7 +14,7 @@ const rules = [
  'Продолжайте работать «помидор» за «помидором», пока задача не будут выполнена. Каждые 4 «помидора» делайте длинный перерыв (15-30 минут)',
 ];
 
-export function TasksList() {
+export function TasksList({tasks}: ITaskList) {
  return (
   <div className="tasks_list">
    <p> Ура! Теперь можно начать работать:</p>
@@ -20,7 +24,7 @@ export function TasksList() {
     ))}
    </ul>
    <InputForTask />
-   <TodoList />
+   <TodoList tasks={tasks} />
   </div>
  );
 }
