@@ -9,13 +9,18 @@
  font-size: 16px;
  border: 1px solid rgb(196, 196, 196);
 }
+.todo_item {
+ display: flex;
+ align-items: center;
+}
 
 .todo_line {
  width: 370px;
  display: flex;
+ justify-content: space-between;
  flex-direction: row;
  align-items: center;
- border-bottom: 1px solid #E4E4E4;
+ border-bottom: 1px solid #e4e4e4;
  padding: 19px 0px;
 }
 .button_task {

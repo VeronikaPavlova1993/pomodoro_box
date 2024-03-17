@@ -1,0 +1,42 @@
+.tasks_checklist {
+ position: absolute;
+ padding: 7px 0;
+ width: 165px;
+ border: 1px solid #c4c4c4;
+ transform: translate(-42%, 10px);
+ background-color: #ffffff;
+ font-size: 16px;
+ font-weight: 300;
+ z-index: 10;
+}
+
+.list {
+ display: flex;
+ flex-direction: column;
+}
+
+.item_checklist {
+ list-style-type: none;
+}
+
+.item_checklist:hover {
+ background-color: #c4c4c4;
+}
+
+.control__checklist {
+ display: flex;
+ align-items: center;
+ padding: 10px 15px;
+ width: 100%;
+ cursor: pointer;
+ transition: 0.2s ease-in-out;
+}
+
+.control__checklist:hover {
+ background-color: #f4f4f4;
+}
+
+.title__checklist {
+ margin-left: 10px;
+ color: #999999;
+}
