@@ -11,7 +11,7 @@ export function TodoList({ tasks }: ITaskList) {
   <div>
    <ul className="tasks_list">
     {tasks.map((task) => { 
-        return <TodoItem key={task.id} task={task.task} id={task.id} />;
+        return <TodoItem key={task.id} task={task.task} id={task.id} pomodoro={task.pomodoro} />;
     })}
    </ul>
   </div>

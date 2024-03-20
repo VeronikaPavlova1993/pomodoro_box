@@ -9,20 +9,19 @@ import { ModalDelete } from '../../../../ModalDelete/ModalDelete';
 export interface ITodoItem {
  id: number;
  task: string;
+ pomodoro: number;
 }
 
-export function TodoItem(props: ITodoItem) {
+export function TodoItem({id, task, pomodoro}: ITodoItem) {
  const [isModalOpen, setIsModalOpen] = useState(false);
  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-
- const [titleValue, setTitleValue] = useState(props.task);
+ const [titleValue, setTitleValue] = useState(task);
  const [isDisabled, setIsDisabled] = useState(true);
 
  const ref = useRef<HTMLInputElement>(null);
  const dispatch = useDispatch();
 
  const openModal = () => {
-  console.log('Modal open!!!');
   setIsModalOpen(true);
   setIsDropdownOpen(false);
  };
@@ -37,7 +36,7 @@ export function TodoItem(props: ITodoItem) {
   ref.current?.blur();
   setIsDisabled(true);
 
-  dispatch(editTask({ id: props.id, title: titleValue }));
+  dispatch(editTask({ id: id, title: titleValue }));
  };
 
  const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
@@ -52,7 +51,7 @@ export function TodoItem(props: ITodoItem) {
   <li>
    <div className="todo_line">
     <div className="todo_item">
-     <div className="pomodoro_task">1</div>
+     <div className="pomodoro_task">{pomodoro}</div>
      <input
       disabled={isDisabled}
       ref={ref}
@@ -75,7 +74,7 @@ export function TodoItem(props: ITodoItem) {
      }
      controls={
       <MenuControlsChecklist
-       id={props.id}
+       id={id}
        openModal={openModal}
        onEdit={onEdit}
       />
@@ -83,7 +82,7 @@ export function TodoItem(props: ITodoItem) {
     />
    </div>
    {isModalOpen && (
-    <ModalDelete id={props.id} closeModal={() => setIsModalOpen(false)} />
+    <ModalDelete id={id} closeModal={() => setIsModalOpen(false)} />
    )}
   </li>
  );

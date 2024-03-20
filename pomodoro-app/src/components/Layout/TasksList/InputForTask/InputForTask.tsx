@@ -10,7 +10,7 @@ export function InputForTask() {
 
  const newItem = () => {
   if (item.trim() !== '') {
-    dispatch(addTask({id: Date.now(), task: item}))
+    dispatch(addTask({id: Date.now(), task: item, pomodoro: 1}))
     setItem(''); 
    } else {
    console.log('Enter task');
