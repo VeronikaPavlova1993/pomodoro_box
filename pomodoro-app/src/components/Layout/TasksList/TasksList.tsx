@@ -1,4 +1,5 @@
 import { InputForTask } from './InputForTask/InputForTask';
+import { TimeTasks } from './TimeTasks/TimeTasks';
 import { ITodoItem } from './TodoList/TodoItem/TodoItem';
 import { TodoList } from './TodoList/TodoList';
 import './taskList.css';
@@ -25,6 +26,7 @@ export function TasksList({tasks}: ITaskList) {
    </ul>
    <InputForTask />
    <TodoList tasks={tasks} />
+   <TimeTasks tasks={tasks} />
   </div>
  );
 }
