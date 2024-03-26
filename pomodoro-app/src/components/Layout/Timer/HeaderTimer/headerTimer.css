@@ -1,0 +1,20 @@
+.timer {
+ height: 507px;
+ width: 733px;
+ background-color: rgb(244, 244, 244);
+}
+.task_timer {
+ display: flex;
+ justify-content: space-between;
+ height: 55px;
+ padding: 19px 40px;
+ background-color: #c4c4c4;
+ align-items: center;
+}
+.time {
+ position: relative;
+ font-size: 150px;
+ font-weight: 200;
+ font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+ color: #333333;
+}

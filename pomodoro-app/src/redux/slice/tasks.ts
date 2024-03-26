@@ -8,6 +8,7 @@ export interface ITask {
 
 const initialState: ITask[] = [];
 
+
 export const tasksSlice = createSlice({
  name: 'tasks',
  initialState,

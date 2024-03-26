@@ -1,12 +1,15 @@
+import { HeaderTimer } from './HeaderTimer/HeaderTimer';
 import './timer.css';
 
-export function Timer() {
+interface ITimerProps{
+    task: string,
+    pomodoro: number | string,
+}
+
+export function Timer(props: ITimerProps) {
  return (
   <section className="timer">
-   <div className="task_timer">
-    <div className="title_task">Сверстать сайт</div>
-    <div className="pomodoro_task">Помидор 1</div>
-   </div>
+  <HeaderTimer text={props.task} pomodoro={props.pomodoro} />
    <div className="time">
     25:00
     <button className="update_time">

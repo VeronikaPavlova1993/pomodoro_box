@@ -11,7 +11,7 @@ export function Layout( {tasks}: ILayout) {
  return (
   <main className="main">
     <TasksList tasks={tasks} />
-    <Timer />
+    <Timer task={tasks.length > 0 ? tasks[0].task : '' } pomodoro={tasks.length > 0 ? tasks[0].pomodoro : ''} />
   </main>
  );
 }
