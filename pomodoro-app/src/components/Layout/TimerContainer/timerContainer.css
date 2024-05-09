@@ -1,0 +1,14 @@
+.block {
+ display: flex;
+ flex-direction: column;
+ width: 733px;
+}
+
+.empty {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ background-color: #f4f4f4;
+ height: 452px;
+ font-size: 40px;
+}

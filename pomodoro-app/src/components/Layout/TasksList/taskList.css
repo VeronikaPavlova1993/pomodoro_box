@@ -3,6 +3,7 @@
  color: #333333;
  font-weight: 700;
  font-size: 24px;
+ list-style-type: none;
 }
 .rule {
  text-align: start;

@@ -1,8 +1,13 @@
 .timer {
- height: 507px;
- width: 733px;
  background-color: rgb(244, 244, 244);
 }
+.title_task {
+ font-weight: 700;
+ font-size: 16px;
+ line-height: 17px;
+ color: #ffffff;
+}
+
 .task_timer {
  display: flex;
  justify-content: space-between;

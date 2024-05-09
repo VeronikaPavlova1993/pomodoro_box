@@ -16,7 +16,7 @@ export function ModalDelete(props: IModalDeleteProps) {
 
  return ReactDOM.createPortal(
   <div className="modal">
-   <div className="content">
+   <div className="content_modal">
     <button className="buttonClose" onClick={props.closeModal}>
      <CloseIcon />
     </button>

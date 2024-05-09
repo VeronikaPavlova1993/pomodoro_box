@@ -1,17 +1,19 @@
 import './layout.css';
 import { TasksList } from './TasksList/TasksList';
 import { ITodoItem } from './TasksList/TodoList/TodoItem/TodoItem';
-import { Timer } from './Timer/Timer';
+import { TimerContainer } from './TimerContainer/TimerContainier';
 
 interface ILayout {
-  tasks: ITodoItem[];
- }
+ tasks: ITodoItem[];
+}
 
-export function Layout( {tasks}: ILayout) {
+export function Layout({ tasks }: ILayout) {
  return (
   <main className="main">
+   <div className="wrapper">
     <TasksList tasks={tasks} />
-    <Timer task={tasks.length > 0 ? tasks[0].task : '' } pomodoro={tasks.length > 0 ? tasks[0].pomodoro : ''} />
+    <TimerContainer task={tasks.length > 0 ? tasks[0] : null} />
+   </div>
   </main>
  );
 }

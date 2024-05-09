@@ -1,0 +1,28 @@
+.update_time {
+ position: relative;
+ padding-top: 66px;
+ border: none;
+ background: none;
+ cursor: pointer;
+}
+.time_container {
+ margin-top: 70px;
+ display: flex;
+ text-align: center;
+ justify-content: center;
+}
+.time {
+ font-size: 150px;
+ line-height: 179px;
+ font-weight: 200;
+
+ transition: 0.15s ease-in-out;
+}
+
+.timeRed {
+ color: #dc3e22;
+}
+
+.timerGreen {
+ color: #a8b64f;
+}

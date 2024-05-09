@@ -1,0 +1,30 @@
+.controls_timer {
+ display: flex;
+ gap: 25px;
+ justify-content: center;
+ margin-top: 32px;
+}
+
+.controls {
+ display: flex;
+ align-items: center;
+ height: 55px;
+ border-radius: 0;
+ padding: 19px 50px;
+ background-color: #a8b64f;
+ color: #fff;
+ border: 2px solid #a8b64f;
+ font-weight: 500;
+ transition: background-color 0.2s linear, border 0.2s linear;
+}
+.controls_read {
+ color: #dc3e22; 
+ border: 2px solid #dc3e22; 
+ background-color: transparent; 
+ transition: 0.15s ease-in-out;
+}
+.controls:disabled {
+ color: #c4c4c4;
+ background-color: rgb(244, 244, 244);
+ border: 2px solid #c4c4c4;
+}
