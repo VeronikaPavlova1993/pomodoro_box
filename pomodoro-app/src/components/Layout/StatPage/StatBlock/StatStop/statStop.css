@@ -1,0 +1,28 @@
+.block_stop {
+ grid-column: 9 / 13;
+ background-color: #f4f4f4;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 32px;
+ min-height: 179px;
+ padding: 25px;
+}
+
+.colorBlock_stop {
+ background-color: #c5f1ff !important;
+}
+
+.wrapper_stop {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.title_stop {
+ font-size: 24px;
+ font-weight: 700;
+}
+
+.count_stop {
+ font-size: 64px;
+}

@@ -1,13 +1,12 @@
+import { useSelector } from 'react-redux';
 import './layout.css';
 import { TasksList } from './TasksList/TasksList';
-import { ITodoItem } from './TasksList/TodoList/TodoItem/TodoItem';
 import { TimerContainer } from './TimerContainer/TimerContainier';
+import { RootState } from '../../redux/store';
 
-interface ILayout {
- tasks: ITodoItem[];
-}
 
-export function Layout({ tasks }: ILayout) {
+export function Layout() {
+    const tasks = useSelector((state: RootState) => state.tasks)
  return (
   <main className="main">
    <div className="wrapper">

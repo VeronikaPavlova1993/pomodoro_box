@@ -1,0 +1,31 @@
+.block_pomodoro {
+ background-color: #f4f4f4;
+ padding: 25px 0 0 0 !important;
+ grid-column: 1 / 4;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ margin-right: 32px;
+}
+
+.blockTop_pomodoro {
+ display: flex;
+ align-items: center;
+}
+
+.counter_pomodoro {
+ margin-left: 17px;
+ font-size: 24px;
+ color: #999999;
+}
+
+.blockBottom_pomodoro {
+ margin-top: auto;
+ padding: 9px 0;
+ text-align: center;
+ width: 100%;
+ background-color: #dc3e22;
+ color: #ffffff;
+ font-size: 24px;
+ font-weight: 700;
+}

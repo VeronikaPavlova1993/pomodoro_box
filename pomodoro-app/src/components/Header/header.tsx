@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import '../Header/header.css';
 
 export function Header() {
@@ -5,7 +6,7 @@ export function Header() {
   <>
    <header className="header">
     <div className="content">
-     <a className="header_logo">
+     <Link to='/' className="header_logo">
       <svg
        width="40"
        height="40"
@@ -34,8 +35,8 @@ export function Header() {
        </defs>
       </svg>
       pomodoro_box
-     </a>
-     <a className="header_static">
+     </Link>
+     <Link to='/stat' className="header_static">
       <svg
        width="24"
        height="24"
@@ -56,7 +57,7 @@ export function Header() {
        </defs>
       </svg>
       Статистика
-     </a>
+     </Link>
     </div>
    </header>
   </>

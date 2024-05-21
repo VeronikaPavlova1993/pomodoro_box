@@ -1,0 +1,87 @@
+.block_chart {
+ position: relative;
+ background-color: #f4f4f4;
+ grid-column: 4 / 13;
+ grid-row: 1 / 3;
+ padding: 0 !important;
+ display: flex;
+ flex-direction: column;
+}
+
+.grid_chart {
+ margin-top: 84px;
+ margin-right: 110px;
+}
+
+.line_chart {
+ margin-bottom: 83px;
+ height: 1px;
+ background-color: rgba(51, 51, 51, 0.2);
+}
+
+.time_chart {
+ position: absolute;
+ right: 25px;
+ transform: translateY(-50%);
+ font-size: 12px;
+}
+
+.weekdays_chart {
+ display: flex;
+ background-color: #ececec;
+ justify-content: space-between;
+ margin-top: auto;
+ padding: 11px 109px 11px 56px;
+}
+
+.weekday_chart {
+ position: relative;
+ background-color: #ececec;
+ width: 77px;
+ text-align: center;
+ margin-right: 32px;
+}
+
+.day_chart:hover {
+ color: #dc3e22;
+}
+
+.day_chart {
+ width: 100%;
+ display: flex;
+ justify-content: center;
+ font-size: 24px;
+ color: #999999;
+ background-color: #ececec;
+ transition: 0.12s ease-in-out;
+}
+
+.active_chart {
+ color: #dc3e22;
+}
+
+.chart_chart{
+ position: absolute;
+ bottom: 100%;
+ margin-bottom: 11px;
+ width: 100%;
+ cursor: pointer;
+
+ transition: 0.12s ease-in-out;
+}
+
+.chart_chart:hover {
+ background-color: #ee735d;
+}
+
+.chartSelected_chart {
+ background-color: #dc3e22;
+}
+
+.chartEmpty_chart {
+ background-color: #c4c4c4;
+}
+
+.chartFill_chart {
+ background-color: #ea8a79;
+}

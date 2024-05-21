@@ -1,0 +1,30 @@
+.block_focus {
+ background-color: #f4f4f4;
+ grid-column: 1 / 5;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 32px;
+ margin-right: 32px;
+ min-width: 405px;
+ min-height: 179px;
+ padding: 25px;
+}
+
+.colorBlock_focus {
+ background-color: #ffdda9 !important;
+}
+
+.wrapper_focus {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.title_focus {
+ font-size: 24px;
+ font-weight: 700;
+}
+
+.percent_focus {
+ font-size: 64px;
+}

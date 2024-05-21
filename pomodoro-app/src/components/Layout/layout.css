@@ -1,15 +1,15 @@
-.main{
-    display: flex;
-    flex-direction: row;
-    padding-top: 170px;
-    gap: 16px;
+.main {
+ display: flex;
+ justify-content: center;
+ padding-top: 170px;
+ gap: 16px;
 }
 
-.wrapper{
-    padding-left: 30px;
-    padding-right: 30px;
-    margin: 0 auto;
-    max-width: 1280px;
-    display: flex;
-    gap: 16px;
+.wrapper {
+ padding-left: 30px;
+ padding-right: 30px;
+ margin: 0 auto;
+ max-width: 1280px;
+ display: flex;
+ gap: 16px;
 }

@@ -1,0 +1,73 @@
+.header_stat {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+ margin-bottom: 40px;
+ margin-left: 80px;
+}
+
+.selectContainer_stat {
+ position: relative;
+ width: 370px;
+}
+
+.selectButton_stat {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ width: 100%;
+ padding: 19px 22px 19px 15px;
+ background-color: #f4f4f4;
+ font-size: 16px;
+
+ transition: 0.15s ease-in-out;
+}
+
+.selectButton_stat > svg {
+ transition: 0.15s ease-in-out;
+}
+
+.active_stat > svg {
+ transform: rotate(180deg);
+}
+
+.selectButton_stat:hover,
+.selectButton_stat:focus-visible {
+ background-color: #e7e7e7;
+}
+
+.listContainer_stat {
+ position: absolute;
+ top: 100%;
+ width: 100%;
+ z-index: 10;
+
+ filter: drop-shadow(0px 10px 63px rgba(0, 0, 0, 0.07));
+}
+
+.item_stat {
+ background-color: #f4f4f4;
+ list-style-type: none;
+}
+
+.item_stat:not(:last-child) {
+ border-bottom: 1px solid #dedede;
+}
+
+.item_stat:first-child {
+ border-top: 1px solid #dedede;
+}
+
+.button_stat {
+ text-align: start;
+ background-color: #f4f4f4;
+ padding: 19px 15px;
+ width: 100%;
+ font-size: 16px;
+ transition: 0.15s ease-in-out;
+}
+
+.button_stat:hover,
+.button_stat:focus-visible {
+ background-color: #e7e7e7;
+}

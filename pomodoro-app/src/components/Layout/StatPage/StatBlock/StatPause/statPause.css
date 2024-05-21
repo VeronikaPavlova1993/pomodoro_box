@@ -1,0 +1,29 @@
+.block_pause {
+ grid-column: 5 / 9;
+ background-color: #f4f4f4;
+ display: flex;
+ justify-content: space-between;
+ margin-top: 32px;
+ margin-right: 32px;
+ min-height: 179px;
+ padding: 25px;
+}
+
+.colorBlock_pause {
+ background-color: #dfdcfe !important;
+}
+
+.wrapper_pause {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+}
+
+.title_pause {
+ font-size: 24px;
+ font-weight: 700;
+}
+
+.time_pause {
+ font-size: 64px;
+}

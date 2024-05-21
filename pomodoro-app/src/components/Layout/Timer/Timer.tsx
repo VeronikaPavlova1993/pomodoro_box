@@ -20,7 +20,7 @@ import {
  increasePauseTime,
  increaseStopCount,
  increaseWorkTime,
-} from '../../../redux/slice/stat';
+} from '../../../redux/slice/statistic';
 import { Time } from '../TimerContainer/Time/Time';
 
 interface ITimerProps {

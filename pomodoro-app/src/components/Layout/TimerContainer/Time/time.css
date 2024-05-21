@@ -26,3 +26,8 @@
 .timerGreen {
  color: #a8b64f;
 }
+
+.real-task {
+ display: flex;
+ justify-content: center;
+}
