@@ -45,6 +45,8 @@ export const timerSlice = createSlice({
     },
     increaseTime: (state) => {
       state.increaseTime++
+      console.log('Yes')
+      console.log(state.increaseTime)
     },
     resetTimer: () => initialState
   },

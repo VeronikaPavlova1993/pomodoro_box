@@ -32,6 +32,8 @@ interface ITimerProps {
 export function Timer(props: ITimerProps) {
  const { pomododroTime, shortBreakeTime, longBreakeTime, longBreakeAmount } =
   useSelector((state: RootState) => state.setting);
+  //const { increaseTime } = useSelector((state: RootState) => state.setting);
+  useSelector((state: RootState) => state.setting);
  const { isStart, isPause, isBreake, isPomodoroCounter, isBreakeCounter } =
   useSelector((state: RootState) => state.timer);
  const dispatch = useDispatch();
@@ -42,6 +44,7 @@ export function Timer(props: ITimerProps) {
 
  useEffect(() => {
   setTimeLeft(pomododroTime);
+  console.log(pomododroTime);
  }, [pomododroTime, shortBreakeTime, longBreakeTime, longBreakeAmount]);
 
  useLayoutEffect(() => {
@@ -68,7 +71,7 @@ export function Timer(props: ITimerProps) {
   const timer = setInterval(() => {
    if (isStart) {
     setTimeLeft(timeLeft - 1);
-
+    console.log(timeLeft);
     isBreake ? dispatch(increaseBreakeTime()) : dispatch(increaseWorkTime());
    }
 

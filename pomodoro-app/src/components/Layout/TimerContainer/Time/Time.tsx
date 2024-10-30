@@ -1,8 +1,8 @@
 import classNames from 'classnames';
 import './time.css';
-//import { useState } from 'react';
-//import { useDispatch, useSelector } from 'react-redux';
-//import { RootState } from '../../../../redux/store';
+import { useDispatch } from 'react-redux';
+import { increaseTime } from '../../../../redux/slice/timer';
+import { useState } from 'react';
 
 interface ITimeProps {
  id: number;
@@ -17,10 +17,8 @@ const formatTime = (time: number) =>
 export function Time(props: ITimeProps) {
 const minutes = formatTime(Math.floor(props.timeLeft / 60));
  const seconds = formatTime(Math.floor(props.timeLeft - Number(minutes) * 60));
- //const [ timePlus, setTimePlus ] = useState(minutes);
- ///const { increaseTime } = useSelector((state: RootState) => state.timer);
-// const dispatch = useDispatch();
-
+ const dispatch = useDispatch();
+ const  [minuteNow, setMinuteNow] = useState(minutes);
  const timeClass = classNames(
   'time',
   { ['timeRed']: props.isStarted },
@@ -30,13 +28,13 @@ const minutes = formatTime(Math.floor(props.timeLeft / 60));
   <>
    <div className="time_container">
     <span className={timeClass}>
-     {minutes}:{seconds}
+    {minuteNow}:{seconds}
     </span>
     <button
      className="update_time"
      onClick={() => {
-     //setTimePlus(Number(timePlus) + 1);
-    // dispatch(increaseTime)
+     dispatch(increaseTime());
+     setMinuteNow(Number(minuteNow) + 1);
      }}
     >
      <svg

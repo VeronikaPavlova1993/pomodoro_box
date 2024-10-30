@@ -21,7 +21,7 @@ export function TasksList({tasks}: ITaskList) {
    <p> Ура! Теперь можно начать работать:</p>
    <ul>
     {rules.map((rule) => (
-     <li className="rule">{rule}</li>
+     <li key={rule} className="rule">{rule}</li>
     ))}
    </ul>
    <InputForTask />

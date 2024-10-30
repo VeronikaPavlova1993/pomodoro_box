@@ -13,10 +13,8 @@ export function InputForTask() {
     dispatch(addTask({id: Date.now(), task: item, pomodoro: 1}))
     setItem(''); 
    } else {
-   console.log('Enter task');
    setItem('');
   }
-  console.log(item);
  };
 
  function handleChange(e: ChangeEvent<HTMLInputElement>) {

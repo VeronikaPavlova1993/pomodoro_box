@@ -8,7 +8,7 @@ export interface ISettings {
 }
 
 export const initialState: ISettings = {
- pomododroTime: 25 * 60,
+ pomododroTime: 25* 60,
  shortBreakeTime: 5 * 60,
  longBreakeTime: 20 * 60,
  longBreakeAmount: 4,

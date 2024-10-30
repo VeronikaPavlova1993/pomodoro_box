@@ -63,8 +63,6 @@ export function StatChart() {
       { ['chartEmpty_chart']: day.workTime === 0 },
       { ['chartFill_chart']: day.workTime > 0 && !day.active }
      );
-
-     console.log(calcHeight(day.workTime) + 'px' );
      return (
       <div
        className="weekday_chart"

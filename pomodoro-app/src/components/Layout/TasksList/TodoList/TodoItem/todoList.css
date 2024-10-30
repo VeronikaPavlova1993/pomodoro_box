@@ -1,4 +1,5 @@
 .pomodoro_task {
+ width: 25px;
  display: flex;
  justify-content: center;
  align-items: center;
@@ -6,7 +7,6 @@
  border-radius: 50%;
  font-size: 16px;
  border: 1px solid rgb(196, 196, 196);
- color: #ffffff;
 }
 .todo_item {
  display: flex;
@@ -40,10 +40,10 @@
  margin-right: 4px;
 }
 
-.text_task:disabled{
-border: none;
-background-color: #ffffff;
-font-size: 16px;
-font-weight: 300;
-line-height: 17px;
+.text_task:disabled {
+ border: none;
+ background-color: #ffffff;
+ font-size: 16px;
+ font-weight: 300;
+ line-height: 17px;
 }

@@ -59,6 +59,7 @@ export function TodoItem({id, task, pomodoro}: ITodoItem) {
       className="text_task" 
       onBlur={onBlur}
       onChange={handleChange}
+      key={titleValue}
      />
     </div>
     <Dropdown
